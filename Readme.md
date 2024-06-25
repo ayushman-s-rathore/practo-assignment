@@ -28,9 +28,18 @@ git checkout -b conflict-branch
 git checkout -b feature1
 ```
 ## Make some changes in to feature1 branch
-
-Merge “feature1” branch into main branch
-Make changes in “conflict-branch”, in the same file and line that you had made changes in feature1
+ made a hello file an added to feature1 branch
+ ```bash
+  git add hello
+  git commit -m ""
+  git push origin feature1
+  ```
+## Merge “feature1” branch into main branch
+```bash
+ git checkout main
+ git merge feature1
+ ```
+## Make changes in “conflict-branch”, in the same file and line that you had made changes in feature1
 Merge master into conflict-branch [Attach screenshot of terminal & file]
 Resolve merge conflicts
 Add a remote named "origin" pointing to a GitHub repository.
